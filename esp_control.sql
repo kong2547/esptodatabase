@@ -29,3 +29,12 @@ CREATE TABLE IF NOT EXISTS gpio_log (
   status     TINYINT(1) NOT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
+
+CREATE TABLE switches (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  device_id VARCHAR(64),
+  name VARCHAR(100),
+  gpio_pin INT,
+  state TINYINT DEFAULT 0
+);
+
