@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
-$mysqli = new mysqli("localhost", "root", "hobby2547", "esp_control");
+$mysqli = new mysqli("localhost", "root", "", "esptodb");
 
 $device_id = $_GET['device_id'] ?? '';
 if ($device_id==='') { echo json_encode(['ok'=>false]); exit; }

@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "hobby2547", "esp_control");
+$mysqli = new mysqli("localhost", "root", "", "esptodb");
 if ($_SERVER['REQUEST_METHOD']==='POST') {
     $name = $mysqli->real_escape_string($_POST['name']);
     $gpio = intval($_POST['gpio_pin']);

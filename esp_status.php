@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
-$mysqli = new mysqli("localhost", "root", "hobby2547", "esp_control");
+$mysqli = new mysqli("localhost", "root", "", "esptodb");
 
 $data = json_decode(file_get_contents('php://input'), true);
 if (!$data) { echo json_encode(['ok'=>false]); exit; }

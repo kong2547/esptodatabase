@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "hobby2547", "esp_control");
+$mysqli = new mysqli("localhost", "root", "", "esptodb");
 if ($mysqli->connect_errno) die("DB Error");
 
 // toggle จากปุ่มเว็บ

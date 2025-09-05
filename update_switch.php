@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
 
-$mysqli = new mysqli("localhost", "root", "hobby2547", "esp_control");
+$mysqli = new mysqli("localhost", "root", "", "esptodb");
 if ($mysqli->connect_errno) {
     http_response_code(500);
     echo json_encode(['ok'=>false,'error'=>'DB connect failed']);
